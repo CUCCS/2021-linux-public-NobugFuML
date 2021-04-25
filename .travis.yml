@@ -1,0 +1,43 @@
+language: bash
+
+os:
+- linux
+
+before_install:
+- sudo apt-get update && sudo apt install shellcheck
+- sudo apt install imagemagick
+- sudo apt install p7zip-full
+- wget "https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/worldcupplayerinfo.tsv"
+- wget "https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/web_log.tsv.7z"
+script:
+- ls -l
+- echo ":------------------------------1-------------------------------------:"
+- shellcheck shellcode/image.sh
+- bash shellcode/image.sh -h
+- bash shellcode/image.sh -q 50%
+- bash shellcode/image.sh -r 50%
+- bash shellcode/image.sh -w "Ming"
+- bash shellcode/image.sh -p "Ming_"
+- bash shellcode/image.sh -s "MingL"
+- bash shellcode/image.sh -t
+- echo ":------------------------------2-------------------------------------:"
+- shellcheck shellcode/player.sh
+- bash shellcode/player.sh -h
+- bash shellcode/player.sh -as
+- bash shellcode/player.sh -ls
+- bash shellcode/player.sh -n
+- bash shellcode/player.sh -a
+- echo ":------------------------------3-------------------------------------:"
+- 7z x web_log.tsv.7z
+- bash shellcode/webip.sh -h
+- bash shellcode/webip.sh -c
+- bash shellcode/webip.sh -i
+- bash shellcode/webip.sh -u
+- bash shellcode/webip.sh -p
+- bash shellcode/webip.sh -a
+- bash shellcode/webip.sh -s /icons/text.xbm
+- ls -l
+- pwd
+notifications:
+  email:
+    on_success: never
