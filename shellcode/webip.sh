@@ -73,7 +73,7 @@ function Top100URLHost {
 # 主程序
 while [ "$1" != "" ];do
     case "$1" in
-       "-o")
+       "-c")
       HostcountTop100
       exit 0
       ;;
@@ -85,15 +85,15 @@ while [ "$1" != "" ];do
       URLcountTop100
       exit 0
       ;;
-       "-c")
+       "-p")
       StateCode
       exit 0
       ;; 
-       "-f")
+       "-a")
       StateCode4XX
       exit 0
       ;;
-       "-g")
+       "-s")
       Top100URLHost "$2"
       exit 0
       ;;
