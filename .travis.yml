@@ -28,7 +28,7 @@ script:
 - bash shellcode/player.sh -n
 - bash shellcode/player.sh -a
 - echo ":------------------------------3-------------------------------------:"
-- 7z x -o./shellcode web_log.tsv.7z
+- 7z x web_log.tsv.7z
 - bash shellcode/webip.sh -h
 - bash shellcode/webip.sh -c
 - bash shellcode/webip.sh -i
