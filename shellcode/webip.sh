@@ -90,7 +90,7 @@ while [ "$1" != "" ];do
       exit 0
       ;; 
        "-a")
-      StateCode4XX
+      StateCode4xx
       exit 0
       ;;
        "-s")

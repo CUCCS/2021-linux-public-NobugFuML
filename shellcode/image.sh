@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# TODO: May need a new dir to hold the results,conveniently for retrieve
 
 function Help(){
     echo "-q Q               对jpeg格式图片进行图片质量压缩 质量因子为Q"
