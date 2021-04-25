@@ -6,7 +6,7 @@ os:
 before_install:
 - sudo apt-get update && sudo apt-get install -y shellcheck
 script:
-- cd /实验四/1-shell
+- cd 实验四/1-shell
 - ls -l
 - bash image.sh
 - ls -l
