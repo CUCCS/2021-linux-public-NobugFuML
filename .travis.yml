@@ -29,13 +29,13 @@ script:
 - bash shellcode/player.sh -n
 - bash shellcode/player.sh -a
 - echo ":------------------------------3-------------------------------------:"
-- bash shellcode/webip.h -h
-- bash shellcode/webip.h -c
-- bash shellcode/webip.h -i
-- bash shellcode/webip.h -u
-- bash shellcode/webip.h -p
-- bash shellcode/webip.h -a
-- bash shellcode/webip.h -s /icons/text.xbm
+- bash shellcode/webip.sh -h
+- bash shellcode/webip.sh -c
+- bash shellcode/webip.sh -i
+- bash shellcode/webip.sh -u
+- bash shellcode/webip.sh -p
+- bash shellcode/webip.sh -a
+- bash shellcode/webip.sh -s /icons/text.xbm
 - ls -l
 - pwd
 notifications:
