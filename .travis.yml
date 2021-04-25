@@ -14,6 +14,17 @@ script:
 - 7z x -ot web_log.tsv.7z
 - cd shell/
 - ls -l
+- echo "task one"
+- shellcheck shellcode/image.sh
+- echo ":----------------------------------------------------------------------:"
+- bash shellcode/image.sh -h
+- bash shellcode/image.sh -q 50%
+- bash shellcode/image.sh -r 50%
+- bash shellcode/image.sh -w "Ming"
+- bash shellcode/image.sh -p "Ming_"
+- bash shellcode/image.sh -s "MingL"
+- bash shellcode/image.sh -t
+- echo ":----------------------------------------------------------------------:"
 
 - bash image.sh
 - ls -l
