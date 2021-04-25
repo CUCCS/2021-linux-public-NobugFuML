@@ -12,11 +12,9 @@ script:
 - wget "https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/worldcupplayerinfo.tsv"
 - wget "https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/web_log.tsv.7z"
 - 7z x -ot web_log.tsv.7z
-- cd shell/
 - ls -l
-- echo "task one"
 - shellcheck shellcode/image.sh
-- echo ":----------------------------------------------------------------------:"
+- echo ":------------------------------ONE-------------------------------------:"
 - bash shellcode/image.sh -h
 - bash shellcode/image.sh -q 50%
 - bash shellcode/image.sh -r 50%
