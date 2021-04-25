@@ -9,7 +9,7 @@ before_install:
 - sudo apt install p7zip-full
 - wget "https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/worldcupplayerinfo.tsv"
 - wget "https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/web_log.tsv.7z"
-- 7z x -o./shell web_log.tsv.7z
+- 7z x -o./shell/data web_log.tsv.7z
 script:
 - ls -l
 - echo ":------------------------------1-------------------------------------:"
