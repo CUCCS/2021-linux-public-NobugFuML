@@ -23,13 +23,20 @@ script:
 - bash shellcode/image.sh -s "MingL"
 - bash shellcode/image.sh -t
 - echo ":------------------------------2-------------------------------------:"
-- shellcheck batchprocessing.sh
-- bash shellcode/batchprocessing.sh -h
-- bash shellcode/batchprocessing.sh -as
-- bash shellcode/batchprocessing.sh -ls
-- bash shellcode/batchprocessing.sh -n
-- bash shellcode/batchprocessing.sh -a
+- shellcheck shellcode/player.sh
+- bash shellcode/player.sh -h
+- bash shellcode/player.sh -as
+- bash shellcode/player.sh -ls
+- bash shellcode/player.sh -n
+- bash shellcode/player.sh -a
 - echo ":------------------------------3-------------------------------------:"
+  - bash webip.sh -h
+  - bash webip.sh -c
+  - bash webip.sh -i
+  - bash webip.sh -u
+  - bash webip.sh -p
+  - bash webip.sh -a
+  - bash webip.sh -s /icons/text.xbm
 - ls -l
 - pwd
 notifications:

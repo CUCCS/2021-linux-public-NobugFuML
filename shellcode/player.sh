@@ -85,6 +85,7 @@ function Age {
         }' worldcupplayerinfo.tsv
 }
 
+# 主程序
 while [ "$1" != "" ];do
     case "$1" in
         "-as")

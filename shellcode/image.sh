@@ -77,6 +77,7 @@ function ImageTransition_jpg {
     done
 }
 
+# 主程序
 while [ "$1" != "" ];do
   case "$1" in
     "-q")
