@@ -6,8 +6,15 @@ os:
 before_install:
 - sudo apt-get update && sudo apt-get install -y shellcheck
 script:
-- cd 实验四/1-shell
+- sudo apt-get update && sudo apt install shellcheck
+- sudo apt install imagemagick
+- sudo apt install p7zip-full
+- wget "https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/worldcupplayerinfo.tsv"
+- wget "https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/web_log.tsv.7z"
+- 7z x -ot web_log.tsv.7z
+- cd shell/
 - ls -l
+
 - bash image.sh
 - ls -l
 - pwd
