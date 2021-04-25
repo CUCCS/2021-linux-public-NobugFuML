@@ -105,7 +105,7 @@ while [ "$1" != "" ];do
         exit 0
         ;;
     "-h")
-        help
+        Help
         exit 0
         ;;
   esac

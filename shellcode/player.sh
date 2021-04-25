@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function help {
+function Help {
     echo "-as                统计不同年龄区间范围（20岁以下、[20-30]、30岁以上）的球员数量、百分比"
     echo "-ls                统计不同场上位置的球员数量、百分比"
     echo "-n                 名字最长的球员是谁？名字最短的球员是谁？"
@@ -89,23 +89,23 @@ function Age {
 while [ "$1" != "" ];do
     case "$1" in
         "-as")
-            age_range
+            AgeStatistics
             exit 0
             ;;
         "-ls")
-            count_number
+            LocationStatistics
             exit 0
             ;;
         "-n")
-            name_length
+            NameLength
             exit 0
             ;;
         "-a")
-            age_statistics
+            Age
             exit 0
             ;;
         "-h")
-            help
+            Help
             exit 0
             ;;
     esac

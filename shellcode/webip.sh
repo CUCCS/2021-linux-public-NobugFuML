@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function help {
+function Help {
     echo "-c      统计访问来源主机TOP 100和分别对应出现的总次数"
     echo "-i      统计访问来源主机TOP 100 IP和分别对应出现的总次数"
     echo "-u      统计最频繁被访问的URL TOP 100"
@@ -98,7 +98,7 @@ while [ "$1" != "" ];do
       exit 0
       ;;
        "-h")
-      help
+      Help
       exit 0
       ;;
     esac
