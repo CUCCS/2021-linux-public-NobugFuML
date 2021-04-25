@@ -13,8 +13,8 @@ script:
 - wget "https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/web_log.tsv.7z"
 - 7z x -ot web_log.tsv.7z
 - ls -l
+- echo ":------------------------------1-------------------------------------:"
 - shellcheck shellcode/image.sh
-- echo ":------------------------------ONE-------------------------------------:"
 - bash shellcode/image.sh -h
 - bash shellcode/image.sh -q 50%
 - bash shellcode/image.sh -r 50%
@@ -22,9 +22,14 @@ script:
 - bash shellcode/image.sh -p "Ming_"
 - bash shellcode/image.sh -s "MingL"
 - bash shellcode/image.sh -t
-- echo ":----------------------------------------------------------------------:"
-
-- bash image.sh
+- echo ":------------------------------2-------------------------------------:"
+- shellcheck batchprocessing.sh
+- bash shellcode/batchprocessing.sh -h
+- bash shellcode/batchprocessing.sh -as
+- bash shellcode/batchprocessing.sh -ls
+- bash shellcode/batchprocessing.sh -n
+- bash shellcode/batchprocessing.sh -a
+- echo ":------------------------------3-------------------------------------:"
 - ls -l
 - pwd
 notifications:
